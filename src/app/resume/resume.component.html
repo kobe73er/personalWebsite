@@ -1,0 +1,838 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">SignIn</a>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/photo2">Photo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/resume">Resume</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+    <span class="navbar-text">
+     Welcome: {{loggedInAccount}}
+    </span>
+    &nbsp;&nbsp;&nbsp;
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="logOut()">Log Out</button>
+    </form>
+  </div>
+</nav>
+
+
+
+<div class="container resume">
+  <div class="row">
+    <div class="col-md-12">
+      <blockquote>
+        <h3>
+          博学，审问，慎思，明辨，笃行
+        </h3>
+        <small>--<cite>中山大学校训</cite></small>
+      </blockquote>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h2>
+          关于我
+        </h2>
+        <p>
+          本科毕业于中山大学软件工程专业，大学期间受过系统的软件工程专业课程方面的教育，专业基础扎实。毕业后一直从事技术工作，对现行IT技术体系有比较深刻的了解。
+          <br/>
+          拥有超过7年以上IT以及互联网行业经验工作经验；
+          <br/>
+          有丰富的项目管理经验和深厚的软件技术功底；
+          <br/>
+          有很强的领导和组织协调能力、判断力与决策能力，优秀的沟通能力、执行能力和团队合作精神。 </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        基本资料
+      </h2>
+
+      <table class="table">
+        <tbody>
+        <tr class="table-success">
+          <td>
+            年　　龄：29
+          </td>
+          <td>
+            婚姻状况：
+            已婚
+          </td>
+          <td>
+            手　　机：156****7083
+          </td>
+          <td>
+            邮　　箱：
+            262103206@qq.com
+          </td>
+          <td>
+            户　　籍：
+            北京
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        教育经历
+      </h2>
+
+      <div>
+        <h5 class="pull-left">
+          中山大学（2006/09–2010/07）
+        </h5>
+      </div>
+
+      <table class="table">
+        <tbody>
+        <tr class="table-success">
+          <td>
+            专业名称：软件工程
+          </td>
+          <td>
+            学历：本科
+          </td>
+          <td>
+            是否统招：是
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-info">
+        工作经历
+      </h3>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        2016.07 -至今 Coupang
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            公司描述
+          </dt>
+          <dd>
+            Coupang是一家总部位于韩国首都首尔的电子商务企业，创始人为Bom Kim，公司成立于2010年。
+            <br/>
+            2015年5月，该公司的融资总额已经达到了14亿美元，Coupang的估值已经超过了一万亿韩元，约合9.13亿美元。
+          </dd>
+          <dt>
+            公司性质
+          </dt>
+          <dd>
+            外商独资·外企办事处
+          </dd>
+          <dt>
+            公司规模
+          </dt>
+          <dd>
+            2000-5000人
+          </dd>
+          <dt>
+            公司行业
+          </dt>
+          <dd>
+            互联网/移动互联网/电子商务
+          </dd>
+          <table class="table">
+            <tbody>
+            <tr class="table-active table-sm">
+              <td>
+                Lead Engineer
+              </td>
+              <td>
+                2016.07-至今
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <dt>
+            薪酬状况
+          </dt>
+          <dd>
+            35000 元/月
+          </dd>
+          <dt>
+            工作地点
+          </dt>
+          <dd>
+            北京
+          </dd>
+          <dt>
+            所在部门
+          </dt>
+          <dd>
+            Monitoring Platform
+          </dd>
+          <dt>
+            汇报对象
+          </dt>
+          <dd>
+            Tribe Leader
+          </dd>
+          <dt>
+            下属人数
+          </dt>
+          <dd>
+            10
+          </dd>
+          <dt>
+            职责业绩
+          </dt>
+          <dd>
+            对产品的整个生命周期负责，具体职责如下：
+            <br/>
+            1.产品的需求分析以及设计
+            <br/>
+            2.产品的技术选型
+            <br/>
+            3.项目的进度安排以及任务分配
+            <br/>
+            4.技术框架的搭建以及核心代码的撰写
+            <br/>
+            5.推动技术团队的发展
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        2014.07 -2016.06 兰亭集势(北京)科技有限公司
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            公司描述
+          </dt>
+          <dd>
+            创立于2007年，是一家电子商务公司，旗下LightInTheBox.com是目前国内知名的国际贸易网站。该公司在北京、上海、苏州、深圳有超过800名员工。
+            <br/>
+            兰亭集势从创始至今，已获得共四轮投资：2007年徐小平的天使投资，2008年联创策源投资，2009年金沙江创投投资，以及2010年挚信资本投资。
+            <br/>
+            兰亭集势涉及的产品包括服装、电子产品、玩具、饰品、家具用品等，目前已经开通了英语、法语、西班牙语、德语、意大利语、葡萄牙语、日语、俄语、阿拉伯语、荷兰语、挪威语和瑞典语。公司年销售额已超过10亿元人民币。网站注册用户数量达数百万，遍布美洲、欧洲、亚洲、非洲等。公司也因此荣获PayPal“2008年度最佳创新公司奖”等殊荣。
+          </dd>
+          <dt>
+            公司性质
+          </dt>
+          <dd>
+            外商独资·外企办事处
+          </dd>
+          <dt>
+            公司规模
+          </dt>
+          <dd>
+            1000-2000人
+          </dd>
+          <dt>
+            公司行业
+          </dt>
+          <dd>
+            互联网/移动互联网/电子商务
+          </dd>
+          <table class="table">
+            <tbody>
+            <tr class="table-active table-sm">
+              <td>
+                技术研发经理
+              </td>
+              <td>
+                2014.07-2016.06
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <dt>
+            薪酬状况
+          </dt>
+          <dd>
+            30000 元/月
+          </dd>
+          <dt>
+            工作地点
+          </dt>
+          <dd>
+            北京
+          </dd>
+          <dt>
+            所在部门
+          </dt>
+          <dd>
+            R&D
+          </dd>
+          <dt>
+            汇报对象
+          </dt>
+          <dd>
+            研发总监
+          </dd>
+          <dt>
+            下属人数
+          </dt>
+          <dd>
+            5
+          </dd>
+          <dt>
+            职责业绩
+          </dt>
+          <dd>
+            1.确保目标的实现，领导团队准时、优质地完成全部工作；
+            <br/>
+            2.制定项目开发计划文档，量化任务，并合理分配给相关人员及任务的监控，跟踪项目进 度，协调项目组成员之间的合作，做好code review;
+            <br/>
+            3.向上级汇报项目的进展情况，需求变更等所有项目信息，项目完成时需进行项目总结， 产生项目总结文档，对项目的客户满意度负责；
+            <br/>
+            4.负责项目的技术框架设计和技术方案确定，协调处理项目相关的技术难点问题，系统核心部分代码编写；
+            <br/>
+            5.承担关键攻关任务的同时，指导初级工程师，组织团队技术分享，促进团队成员共同进步
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        2012.06 -2014.06 爱立信（L.M. ERICSSON）
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            公司描述
+          </dt>
+          <dd>
+            Ericsson Overview
+            Ericsson is a world-leading provider of telecommunications equipment & services to mobile & fixed network
+            operators. Over 1,000 networks in more than 180 countries use Ericsson equipment, & more than 40 percent of
+            the world's mobile traffic passes through Ericsson networks. Using innovation to empower people, business &
+            society, we are working towards the Networked Society, in which everything that can benefit from a
+            connection will have one. At Ericsson, we apply our innovation to market-based solutions that empower people
+            & society to help shape a more sustainable world....
+          </dd>
+          <dt>
+            公司性质
+          </dt>
+          <dd>
+            外商独资·外企办事处
+          </dd>
+          <dt>
+            公司规模
+          </dt>
+          <dd>
+            10000人以上
+          </dd>
+          <dt>
+            公司行业
+          </dt>
+          <dd>
+            通信(设备/运营/增值)
+          </dd>
+          <table class="table">
+            <tbody>
+            <tr class="table-active table-sm">
+              <td>
+                SDE
+              </td>
+              <td>
+                2012.06-2014.06
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <dt>
+            薪酬状况
+          </dt>
+          <dd>
+            30000 元/月
+          </dd>
+          <dt>
+            工作地点
+          </dt>
+          <dd>
+            北京
+          </dd>
+          <dt>
+            所在部门
+          </dt>
+          <dd>
+            R&D
+          </dd>
+          <dt>
+            汇报对象
+          </dt>
+          <dd>
+            研发总监
+          </dd>
+          <dt>
+            下属人数
+          </dt>
+          <dd>
+            5
+          </dd>
+          <dt>
+            职责业绩
+          </dt>
+          <dd>
+            1.确保目标的实现，领导团队准时、优质地完成全部工作；
+            <br/>
+            2.制定项目开发计划文档，量化任务，并合理分配给相关人员及任务的监控，跟踪项目进 度，协调项目组成员之间的合作，做好code review;
+            <br/>
+            3.向上级汇报项目的进展情况，需求变更等所有项目信息，项目完成时需进行项目总结， 产生项目总结文档，对项目的客户满意度负责；
+            <br/>
+            4.负责项目的技术框架设计和技术方案确定，协调处理项目相关的技术难点问题，系统核心部分代码编写；
+            <br/>
+            5.承担关键攻关任务的同时，指导初级工程师，组织团队技术分享，促进团队成员共同进步
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        2010.07 -2012.05 浪潮集团有限公司
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            公司描述
+          </dt>
+          <dd>
+
+            浪潮是中国领先的云计算、大数据服务商，已经形成涵盖IaaS、PaaS、SaaS三个层面的整体解决方案服务能力，凭借浪潮高端服务器、海量存储、云操作系统、信息安全技术为客户打造领先的云计算基础架构平台，基于浪潮政务、企业、行业信息化软件、终端产品和解决方案，全面支撑智慧政府、企业云、垂直行业云建设。
+            <br/>
+            浪潮集团拥有浪潮信息、浪潮软件、浪潮国际三家上市公司，业务涵盖系统与技术、软件与服务、半导体三大产业群组，为全球八十多个国家和地区提供IT产品和服务，全方位满足政府与企业信息化需求。浪潮综合实力位列2015年中国电子信息产业百强第9位、中国IT企业前两位、中国自主品牌软件厂商第一位，浪潮服务器销量全球第五、中国第一，浪潮存储连续10年蝉联国有品牌销量第一，浪潮集团管理软件连续11年市场占有率第一，浪潮政务云市场占有率第一。浪潮是全国八家国家安全可靠计算机信息系统集成重点企业之一，自主研发的中国第一款关键应用主机浪潮K1使中国成为继美日之后第三个掌握高端服务器核心技术的国家，荣获2014年度国家科技进步一等奖。...
+          </dd>
+          <dt>
+            公司性质
+          </dt>
+          <dd>
+            国有企业
+          </dd>
+          <dt>
+            公司规模
+          </dt>
+          <dd>
+            10000人以上
+          </dd>
+          <dt>
+            公司行业
+          </dt>
+          <dd>
+            IT服务/系统集成
+          </dd>
+          <table class="table">
+            <tbody>
+            <tr class="table-active table-sm">
+              <td>
+                高级软件工程师
+              </td>
+              <td>
+                2010.07-2012.05
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <dt>
+            工作地点
+          </dt>
+          <dd>
+            北京
+          </dd>
+          <dt>
+            所在部门
+          </dt>
+          <dd>
+            系统软件部
+          </dd>
+          <dt>
+            汇报对象
+          </dt>
+          <dd>
+            部门经理
+          </dd>
+          <dt>
+            下属人数
+          </dt>
+          <dd>
+            0
+          </dd>
+          <dt>
+            职责业绩
+          </dt>
+          <dd>
+            1.参与与产品、需求分析关于需求实现的讨论与工作量评估；
+            <br/>
+            2.依工作计划完成互联网软件系统的设计、开发、单元测试；
+            <br/>
+            3.协助架构师完善系统平台架构；
+            <br/>
+            4.参与软件开发技术和规范及标准流程的改进；
+            <br/>
+            5.指定合理的工作计划，并在执行过程中管理风险；
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-info">
+        项目经历
+      </h3>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        微服务监控系统（2016/07–至今）
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            项目职务
+          </dt>
+          <dd>
+            Lead Enginner
+          </dd>
+          <dt>
+            所在公司
+          </dt>
+          <dd>
+            Coupang
+          </dd>
+          <dt>
+            项目描述
+          </dt>
+          <dd>
+            微服务监控系统是一个用来监控公司内部微服务系统健康状况的系统。数据源系公司内部的海量数据。
+            <br/>
+            系统由前后端组成。
+            <br/>
+            该系统可以展示微服务系统的整体架构图。包括每个系统的健康状态，服务与服务之间的调用关系。具体信息可以查看每个微服务系统由多少台服务器构成，每台服务器的cpu，disk，memory的使用情况；该微服务的平均相应时间，总体请求次数，规定时间请求次数。
+            <br/>
+            该系统前端初期采用Extjs 6.2 架构，后期采用Angular2 ＋Bootstrap；
+            <br/>
+            该系统后端基于Pinpoint系统而搭建。具体采用技术为SpringBoot，Mybatis。海量数据系统数据库为Hbase。
+          </dd>
+          <dt>
+            项目职责
+          </dt>
+          <dd>
+            从0到1的构建整个系统，具体包括：
+            <br/>
+            1.需求的分析与产品原型设计（采用Axure制作产品原型，形成内部讨论沟通机制)
+            <br/>
+            2.技术选型。包括前后端技术的选型。
+            <br/>
+            3.项目进度的安排以及任务的分配；
+            <br/>
+            4.与韩国需求方的需求沟通与讨论；
+            <br/>
+            5.前后端框架的搭建以及核心代码的撰写；
+            <br/>
+            6.到韩国进行产品的Workshhop以及交付
+          </dd>
+
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        Pinpoint APM系统搭建运维以及推广（2016/07–至今）
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            项目职务
+          </dt>
+          <dd>
+            Lead Enginner
+          </dd>
+          <dt>
+            所在公司
+          </dt>
+          <dd>
+            Coupang
+          </dd>
+          <dt>
+            项目描述
+          </dt>
+          <dd>
+            Pinpoint是用Java编写的大规模分布式系统的APM（应用程序性能管理）工具。
+            <br/>
+            在Dapper之后，Pinpoint提供了一个解决方案，以帮助分析系统的整体结构，以及如何通过跟踪跨分布式应用程序的交易来将组件中的组件互连。
+            <br/>
+            安装代理而不改变单行代码
+            <br/>
+            对性能影响最小（资源使用量增加约3％）
+          </dd>
+          <dt>
+            项目职责
+          </dt>
+          <dd>
+            作为公司Pinpoint系统的Owner，在公司技术部门范围内推广该系统。
+            <br/>
+            搭建运维该系统。
+            <br/>
+            在该系统技术上二次开发，为公司微服务监控提供支持。
+          </dd>
+
+          <dt>
+            项目业绩
+          </dt>
+          <dd>
+            公司技术部门广泛应用该系统进行监控分析，提高了全公司技术部门的工作效率
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        兰亭集势后台管理系统（2014/07–2016/06）
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            项目职务
+          </dt>
+          <dd>
+            技术研发经理
+          </dd>
+          <dt>
+            所在公司
+          </dt>
+          <dd>
+            兰亭集势(北京)科技有限公司
+          </dd>
+          <dt>
+            项目描述
+          </dt>
+          <dd>
+            功能：商品管理、订单管理；为业务提供支持，为其他端提供支持。
+          </dd>
+          <dt>
+            项目职责
+          </dt>
+          <dd>
+            1.负责公司系统的架构设计、研发工作。
+            2.承担从业务向技术转换的桥梁作用，理解系统的业务需求，制定系统的整体框架，辅助并指导系统分析，指导并审核系统设计工作。
+            <br/>
+            3.协助项制定项目计划和控制项目进度。
+            <br/>
+            4.负责组织技术研究、重用、扩展、和攻关工作。
+            <br/>
+            5.负责制定公司技术标准及规范，组织和管理技术人员的培训工作，负责组织及带领公司内部员工研究与项目相关的新技术。
+            <br/>
+            6.为系统开发、实施团队提供技术保障。
+            <br/>
+            7.对系统框架相关技术和业务进行培训，指导技术人员，并解决系统开发、实施、运行中出现的各种问题。
+          </dd>
+
+
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        自动化测试套件开发（2013/07–2014/06）
+      </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            项目职务
+          </dt>
+          <dd>
+            Full stack Enginner
+          </dd>
+          <dt>
+            所在公司
+          </dt>
+          <dd>
+            爱立信（L.M. ERICSSON）
+          </dd>
+          <dt>
+            项目描述
+          </dt>
+          <dd>
+            对开源软件Junit3, Junit4, TestNG做二次开发，撰写适合自己系统的自动化测试套件。底层采用开源测试引擎JUnit3/4, TestNG。
+            <br/>
+            表现层有多重展现形式：网页形式，本地console log, eclipseRCP应用。
+          </dd>
+          <dt>
+            项目职责
+          </dt>
+          <dd>
+            1.参与产品、需求分析关于需求实现的讨论与工作量评估；
+            <br/>
+            2.依工作计划完成互联网软件系统的设计、开发、单元测试；
+            <br/>
+            3.协助架构师完善系统平台架构；
+            <br/>
+            4.参与软件开发技术和规范及标准流程的改进；
+          </dd>
+
+
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        DevOps部署运维（2012/08–2014/05） </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            项目职务
+          </dt>
+          <dd>
+            Full stack Enginner
+          </dd>
+          <dt>
+            所在公司
+          </dt>
+          <dd>
+            爱立信（L.M. ERICSSON）
+          </dd>
+          <dt>
+            项目描述
+          </dt>
+          <dd>
+            推动部门DevOps进程，规范化部门软件开发流程，深度应用敏捷开发模式以及Jenkins，sonarQube等技术提高部门软件自动化水平。
+          </dd>
+          <dt>
+            项目职责
+          </dt>
+          <dd>
+            1.部署DevOps 环境；
+            <br/>
+            2.推动Jenkins以及SonarQube在部门的推广应用；
+            <br/>
+            3.日常运维工作。
+          </dd>
+
+
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>
+        浪潮ERP系统（2010/07–2012/04） </h4>
+      <div class="job">
+        <dl>
+          <dt>
+            项目职务
+          </dt>
+          <dd>
+            软件开发工程师
+          </dd>
+          <dt>
+            所在公司
+          </dt>
+          <dd>
+            浪潮集团有限公司
+          </dd>
+          <dt>
+            项目描述
+          </dt>
+          <dd>
+            1.负责后台管理系统或应用服务端开发；
+            <br/>
+            2.完成系统框架和核心代码的实现；
+            <br/>
+            3.负责代码的重构和性能优化，确保线上服务的稳定性和架构合理性；
+            <br/>
+            4.对研发中疑难技术问题提供有效解决方法并实施改进和优化。
+          </dd>
+          <dt>
+            项目职责
+          </dt>
+          <dd>
+            1.负责后台管理系统或应用服务端开发；
+            <br/>
+            2.完成系统框架和核心代码的实现；
+            <br/>
+            3.负责代码的重构和性能优化，确保线上服务的稳定性和架构合理性；
+            <br/>
+            4.对研发中疑难技术问题提供有效解决方法并实施改进和优化。
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+</div>

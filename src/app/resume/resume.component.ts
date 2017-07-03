@@ -1,13 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-resume',
+  templateUrl: './resume.component.html',
+  styleUrls: ['./resume.component.css']
 })
-export class HomeComponent implements OnInit {
+export class ResumeComponent implements OnInit {
 
   loggedInAccount: string;
 
@@ -23,5 +22,4 @@ export class HomeComponent implements OnInit {
     sessionStorage.clear();
     this.router.navigate(['/signin'])
   }
-
 }

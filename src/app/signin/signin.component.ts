@@ -20,7 +20,6 @@ export class SigninComponent implements OnInit {
     if (!this.signinService.checkUsernameAndPassword(username, password)) {
       alert('not invalid user');
     } else {
-      //redirect to home page
       this._router.navigateByUrl('/home');
     }
 

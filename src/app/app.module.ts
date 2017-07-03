@@ -4,24 +4,31 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 
 import {RouterModule, Routes} from '@angular/router';
-import {NaviComponent} from './navi/navi.component';
 import {HomeComponent} from './home/home.component';
-import {PhotoComponent} from './photo/photo.component';
 import {BlogComponent} from './blog/blog.component';
-import { SigninComponent } from './signin/signin.component';
+import {SigninComponent} from './signin/signin.component';
+
+import {PhotoGuard} from './photo2/photo.guard';
+import {AuthService} from './service/auth.service'
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {NotAllowedPageComponent} from './not-allowed-page/not-allowed-page.component';
+import {Photo2Component} from './photo2/photo2.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'photos', component: PhotoComponent},
+  {path: 'photo2', component: Photo2Component, canActivate: [PhotoGuard]},
   {path: 'blog', component: BlogComponent},
+  {path: 'resume', component: ResumeComponent},
   {path: 'signin', component: SigninComponent},
+  {path: 'notAllowedPage', component: NotAllowedPageComponent},
   // {path: 'hero/:id', component: Detail},
   {
     path: '',
     redirectTo: '/signin',
     pathMatch: 'full'
   },
-  {path: '**', component: HomeComponent}
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 
@@ -29,17 +36,20 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
 
-    NaviComponent,
     HomeComponent,
-    PhotoComponent,
     BlogComponent,
-    SigninComponent
+    SigninComponent,
+    PageNotFoundComponent,
+    NotAllowedPageComponent,
+    Photo2Component,
+    ResumeComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {enableTracing: true} // <-- debugging purposes only
+    )
   ],
-  providers: [],
+  providers: [PhotoGuard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

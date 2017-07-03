@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NaviComponent } from './navi.component';
+import { NotAllowedPageComponent } from './not-allowed-page.component';
 
-describe('NaviComponent', () => {
-  let component: NaviComponent;
-  let fixture: ComponentFixture<NaviComponent>;
+describe('NotAllowedPageComponent', () => {
+  let component: NotAllowedPageComponent;
+  let fixture: ComponentFixture<NotAllowedPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NaviComponent ]
+      declarations: [ NotAllowedPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NaviComponent);
+    fixture = TestBed.createComponent(NotAllowedPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
